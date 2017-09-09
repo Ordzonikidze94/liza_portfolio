@@ -1,0 +1,25 @@
+{% extends 'core/layout/application.html' %}
+
+{% block head_title %}
+    News
+{% endblock %}
+
+
+
+
+
+{% block content %}
+    {% for new in news %}
+        <h2>{{ new.title }}</h2>
+        <a>{{ new.text }}</a>
+    {% endfor %}
+{% endblock %}
+
+
+
+
+
+
+{% block footer_addition %}
+    <div>News_footer</div>
+{% endblock %}
